@@ -1,0 +1,93 @@
+/* General Styles */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for the Dashboard */
+.dashboard-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Center the container horizontally and vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Set height to 50% of the viewport */
+    margin-top: 50px; /* Add some top margin for spacing */
+}
+
+/* User data section */
+.user-data {
+    margin-bottom: 20px;
+}
+
+.user-data p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.user-data strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Error message */
+.error-message {
+    color: #ff4d4d;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Logout Button */
+button {
+    display: block;
+    width: 50%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004085;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .dashboard-container {
+        padding: 15px;
+        height: 60vh; /* Adjust height for smaller screens */
+    }
+
+    .user-data p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
